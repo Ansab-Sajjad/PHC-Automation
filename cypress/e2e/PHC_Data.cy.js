@@ -9,4 +9,4 @@ const Super_Admin_data = {
 
    
  
-   export default Super_Admin_data; 
+   export default Super_Admin_data;
