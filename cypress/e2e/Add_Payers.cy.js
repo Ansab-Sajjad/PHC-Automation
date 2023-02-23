@@ -66,11 +66,18 @@ it('P10 - Enter Password.', () => {
 it('P11 - Enter Confirm Password.', () => {
     cy.get('[id="cpassword"]').type("Admin@123")
   cy.wait(2000)
-  cy.get('.ico icon-icn-view_outline cursor-pointer > :nth-child(1)').click();
     expect(true).to.equal(true)
 });
 
+it('P12 - Click on Add Payer button.', () => {
+    cy.get('[type="submit"]').click();
+});
 
+it('13- Verifying the Toast message => Login Successful.', () => {
+    cy.wait(1000);
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Payer record updated successfully')
+    cy.wait(2000)
+});
 
 
 
