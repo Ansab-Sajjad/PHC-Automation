@@ -1,12 +1,12 @@
 
 /// <reference types="Cypress" /> 
 
-import Super_Admin_data from "./PHC_Data.cy";
+import Super_Admin_data from "../fixtures/PHC_Data.cy";
 
 function PHC_Login() {
    
 
- 
+
 
   it('2- Logo should be present.', () => {
     cy.get('.img-fluid').should('be.visible')
