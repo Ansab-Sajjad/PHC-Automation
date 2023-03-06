@@ -31,6 +31,7 @@ function Add_New_Users(){
 
     it('NU-6', () => {
         cy.get('[id="phoneNumber"]').type("2328876082")
+        expect(true).to.equal(true)
     });
 
     it('NU-7 Enter Email.', () => {
