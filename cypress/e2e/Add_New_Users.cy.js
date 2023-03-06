@@ -30,7 +30,7 @@ function Add_New_Users(){
     });
 
     it('NU-6', () => {
-        
+        cy.get('[id="phoneNumber"]').type("2328876082")
     });
 
     it('NU-7 Enter Email.', () => {
