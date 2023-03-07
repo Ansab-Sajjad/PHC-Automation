@@ -14,14 +14,14 @@ describe("Lets Automate the PHC.", () => {
 Visit_URL()
 PHC_Login()
 // Add_Payers()
-// Add_new_trip()
+Add_new_trip()
 // Add_Vehicles()
 // Edit_Vehicles()
-
 // Add_New_Crews()
 // Add_New_Users()
+
 // Add_Facilities()
-Add_Patient()
+// Add_Patient()
 
 
 });

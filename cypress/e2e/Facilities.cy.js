@@ -19,7 +19,7 @@ function Add_Facilities(){
   });
 
     it('F-4 Add Facility Address.', () => {
-        cy.get('[test-id="ti-facility-address"]').type("Facility Address" + Random_Textt())
+        cy.get('[test-id="ti-facility-address"]').type("Ansab Sajjad House, Sarinager Road, Muzaffarabad").wait(2000).type('{enter}')
             expect(true).to.equal(true)
   });
 
