@@ -7,25 +7,26 @@ function Add_new_trip(){
     });
     it('NT-2 Click on New Trip button.', () => {
         cy.get('.text-end > .btn').click({force:true})
-        cy.wait(3000)
+        cy.wait(5000)
+    });
+
+    it('NT-3 Wait for 2 seconds. ', () => {
+        cy.wait(2000);  
+    });
+
+    it('NT-4 Select Payer ID.', () => {
+        cy.get('[id="payerId"]').click().wait(2000)
+        cy.get('#react-select-3-option-1').click()
     });
 
 
-    it('NT-3 Select Payer ID.', () => {
-        cy.get('#payerId > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
-        // cy.get('#react-select-3-option-2').click()
-    });
+    
 
-
-    it('NT-4 Wait for 2 seconds. ', () => {
-        cy.wait(2000);   
-    });
-
-    it('NT-5 Select Private from the dropdown.', () => {
-             
-        cy.get('#react-select-3-option-2').click({force:true})
+    // it('NT-5 Select Private from the dropdown.', () => {
+    //          cy.get('[id="payerId"]').click()
+    //     cy.get('#react-select-3-option-1').click({force:true})
         
-    });
+    // });
 
 
     it('NT-6 Enter Cost Center. ', () => {
@@ -138,43 +139,48 @@ function Add_new_trip(){
     });
 
 
-    it('NT- ', () => {
-        
+    //============================================= Drop Off Info =============================================
+
+
+    it('NT-24 Select Facility. ', () => {
+        cy.get('[id="react-select-7-input"]').click().wait(2000)//.type("fazabad").type('{enter}')
+        // cy.get('#react-select-7-option-1').click()
+        cy.get('#react-select-7-option-3').click()
     });
 
 
-    it('NT- ', () => {
-        
+    it('NT-25 Enter Address. ', () => {
+        cy.get('[test-id="ti-facility-trips.0.dropOffAddress"]').click().type("1065-3 Tsubaki, Shirahama, Nishimuro District, Wakayama 649-2326, Japan").type('{enter}')
     });
 
 
-    it('NT- ', () => {
-        
+    it('NT-26 Enter Floor. ', () => {
+        cy.get('[id="trips.0.dropOffFloor"]').click().type("second")
     });
 
 
-    it('NT- ', () => {
-        
+    it('NT-27 Enter Room. ', () => {
+        cy.get('[id="trips.0.dropOffRoom"]').click().type("4")
     });
 
 
-    it('NT- ', () => {
-        
+    it('NT-28 Enter Bed. ', () => {
+        cy.get('[id="trips.0.dropOffBed"]').click().type("30")
     });
 
 
-    it('NT- ', () => {
-        
+    it('NT-29 Enter APT/Suite.', () => {
+        cy.get('[id="trips.0.dropOffApt"]').click().type("5")
     });
 
 
-    it('NT- ', () => {
-        
+    it('NT-30 Enter Stairs. ', () => {
+        cy.get('[id="trips.0.dropOffStairs"]').click().type("12")
     });
 
 
-    it('NT- ', () => {
-        
+    it('NT-31 Enter Appoinment time.', () => {
+        cy.get('[name="trips.0.apptTime"]').click().type("23:56")
     });
 
 

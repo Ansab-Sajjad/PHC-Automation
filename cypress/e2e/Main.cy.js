@@ -8,20 +8,25 @@ import Edit_Vehicles from "./Edit_Vehicle.cy";
 import Add_Facilities from "./Facilities.cy";
 import PHC_Login from "./Login.cy";
 import Visit_URL from "./PHC_URLs.cy";
+import round_trip from "./Round_Trip.cy";
 
 describe("Lets Automate the PHC.", () => {
     
 Visit_URL()
 PHC_Login()
 // Add_Payers()
-Add_new_trip()
+// Add_new_trip()
+// round_trip()
+
+
 // Add_Vehicles()
 // Edit_Vehicles()
 // Add_New_Crews()
 // Add_New_Users()
 
+
 // Add_Facilities()
-// Add_Patient()
+Add_Patient()
 
 
 });
